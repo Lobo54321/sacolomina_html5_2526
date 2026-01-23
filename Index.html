@@ -10,33 +10,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header>
   <h1 style="font-family: 'Oswald', sans-serif;">Mi Tienda de Videojuegos</h1>
   <nav>
     <b><a href="Index.html">Inicio</a></b>
     <b><a href="Inicio_sesión/inicio_sesión.html">Iniciar sesión</a></b>
-       <b><a href="">Producto</a></b>
-  
+    <b><a href="">Productos</a></b>
   </nav>
 </header>
-<main class="productos">
+<section class="great-area">
+  <div class="contenido">
+    <h1>Bienvenido a la Mejor Tienda de Videojuegos</h1>
+    <p>Descubre los juegos más populares y las mejores ofertas del momento</p>
+    <a href="#productos" class="btn">Ver Productos</a>
+  </div>
+</section>
+
+<main class="productos" id="productos">
   <div class="producto">
-    <img src="https://gaming-cdn.com/images/products/2616/orig/the-legend-of-zelda-breath-of-the-wild-switch-juego-nintendo-eshop-europe-cover.jpg?v=1730381682" alt="Imagen del Producto 1"> <!-- Placeholder y alt mejorado -->
+    <img src="https://gaming-cdn.com/images/products/2616/orig/the-legend-of-zelda-breath-of-the-wild-switch-juego-nintendo-eshop-europe-cover.jpg?v=1730381682" alt="The Legend of Zelda">
     <h3>The Legend of Zelda</h3>
     <p>$59.99</p>
     <button>Comprar</button>
   </div>
 
   <div class="producto">
-    <img src="https://i.blogs.es/d60ef0/super-mario-odyssey-cabecera/1366_2000.jpg" alt="Imagen del Producto 2"> <!-- Cambiado -->
+    <img src="https://i.blogs.es/d60ef0/super-mario-odyssey-cabecera/1366_2000.jpg" alt="Super Mario Odyssey">
     <h3>Super Mario Odyssey</h3>
     <p>$49.99</p>
     <button>Comprar</button>
   </div>
+  <div class="producto">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/FIFA_23_Cover_Art.jpg" alt="FIFA 23">
+    <h3>FIFA 23</h3>
+    <p>$39.99</p>
+    <button>Comprar</button>
+  </div>
+  <div class="producto">
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Minecraft_cover.png" alt="Minecraft">
+    <h3>Minecraft</h3>
+    <p>$29.99</p>
+    <button>Comprar</button>
+  </div>
 </main>
-
 <footer>
-  <p>&copy; 2026 Mi Tienda de Videojuegos. Todos los derechos reservados.</p> <!-- Corregido año -->
+  <p>&copy; 2026 Mi Tienda de Videojuegos. Todos los derechos reservados.</p>
 </footer>
+<script>
+  document.querySelector('.btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#productos').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
 </body>
 </html>
