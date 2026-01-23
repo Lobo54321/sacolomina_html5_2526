@@ -151,3 +151,31 @@ footer {
     font-size: 1em;
   }
 }
+
+
+/* Responsive breakpoints */
+/* Móviles */
+@media (max-width: 576px){
+  .hero{grid-template-columns:1fr;}
+  .product-card{grid-column:span 12}
+  .site-nav .nav-toggle{display:inline-block}
+  .menu{
+    display:none; flex-direction:column; background:var(--surface);
+    position:absolute; right:4%; top:54px; padding:.5rem;
+    border:1px solid var(--border); border-radius:.6rem;
+  }
+  .menu.open{display:flex}
+  .cart-table th:nth-child(2), .cart-table td:nth-child(2){display:none}
+}
+/* Tablets */
+@media (min-width: 577px) and (max-width: 768px){
+  .product-card{grid-column:span 6}
+}
+/* Portátiles */
+@media (min-width: 769px) and (max-width: 1200px){
+  .product-card{grid-column:span 4}
+}
+/* Escritorio */
+@media (min-width: 1201px){
+  .product-card{grid-column:span 3}
+}
