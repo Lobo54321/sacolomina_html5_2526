@@ -18,12 +18,12 @@ body {
   border-radius: 8px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  text-align: center;
 }
 
 .login-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
 }
 
 .login-form input {
@@ -53,4 +53,30 @@ button {
 
 button:hover {
   background: #45a049;
+}
+
+.login-form .registro {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.login-form .registro a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form .registro a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #333;
+  text-align: center;
+  padding: 15px;
+  color: #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
