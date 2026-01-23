@@ -136,23 +136,6 @@ footer {
   color: #ccc;
 }
 
-@media (max-width: 768px) {
-  .productos {
-    grid-template-columns: 1fr;
-  }
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-  .great-area h1 {
-    font-size: 2em;
-  }
-  .great-area p {
-    font-size: 1em;
-  }
-}
-
-
 /* Responsive breakpoints */
 /* Móviles */
 @media (max-width: 576px){
