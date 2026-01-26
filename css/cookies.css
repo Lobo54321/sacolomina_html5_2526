@@ -79,25 +79,6 @@ nav a:hover {
   transition: background 0.3s;
 }
 
-.cookie {
-    position: relative;
-    z-index: 3;
-}
-
-.cookie:hover {
-    z-index: 1;
-}
-
-.cookieclick {
-    position: absolute;
-    z-index: 3;
-    width: 3%;
-}
-
-.cookieclick:hover {
-    z-index: 2;
-}
-
 footer {
   background: #333;
   text-align: center;
