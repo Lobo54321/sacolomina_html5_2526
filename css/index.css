@@ -96,7 +96,7 @@ nav a:hover {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.25s ease-in-out;
 }
 
 .producto:hover {
