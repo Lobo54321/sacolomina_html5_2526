@@ -4,19 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Tienda de Videojuegos</title>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../CSS/index.css">
 </head>
+
 <body>
 
 <header>
   <h1 style="font-family: 'Oswald', sans-serif;">Mi Tienda de Videojuegos</h1>
   <nav>
-    <b><a href="Index.html">Inicio</a></b>
-    <b><a href="Inicio_sesión/inicio_sesión.html">Iniciar sesión</a></b>
-    <b><a href="">Productos</a></b>
+    <b><a href="../Index.html">Inicio</a></b>
+    <b><a href="../Inicio_sesión/inicio_sesión.html">Iniciar sesión</a></b>
+    <b><a href="producto.html">Productos</a></b>
   </nav>
 </header>
 <section class="great-area">
@@ -41,19 +39,21 @@
     <p>$49.99</p>
     <button>Comprar</button>
   </div>
+  
   <div class="producto">
     <img src="https://cdn2.unrealengine.com/ea-sports-fifa-23-is-coming-to-the-epic-games-store-1920x1080-398e19351a82.jpg" alt="FIFA 23">
     <h3>FIFA 23</h3>
     <p>$39.99</p>
     <button>Comprar</button>
   </div>
+
   <div class="producto">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Minecraft_2024_cover_art.png/250px-Minecraft_2024_cover_art.png" alt="Minecraft">
     <h3>Minecraft</h3>
     <p>$29.99</p>
     <button>Comprar</button>
   </div>
-</main>
+
 
   <div class="producto">
     <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_MarioKart8Deluxe_image1600w.jpg" alt="Minecraft">
@@ -61,7 +61,7 @@
     <p>$99.99</p>
     <button>Comprar</button>
   </div>
-</main>
+
 
   <div class="producto">
     <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperSmashBrosUltimate_02.jpg" alt="Smash">
@@ -69,8 +69,62 @@
     <p>$52.99</p>
     <button>Comprar</button>
   </div>
-</main>
 
+    <div class="producto">
+    <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/wiiu_download_software_5/H2x1_WiiUDS_HollowKnight_image1600w.jpg" alt="Hollow">
+    <h3>Hollow knight</h3>
+    <p>$31.99</p>
+    <button>Comprar</button>
+  </div>
+
+    <div class="producto">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504230/capsule_616x353.jpg?t=1714089525" alt="Celeste">
+    <h3>Celeste</h3>
+    <p>$52.99</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="producto">
+    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202503/2819/346190abf755e3883d1353fbc8d8ccb7e1acf076f1138d6b.jpg" alt="Warzone">
+    <h3>Call of Duty Warzone</h3>
+    <p>$97.99</p>
+    <button>Comprar</button>
+  </div>
+
+
+  <div class="producto">
+    <img src="https://i.blogs.es/1ca280/trailer-1-illustration-16x9-/450_1000.jpg" alt="GTA">
+    <h3>GTA6</h3>
+    <p>$12.99</p>
+    <button>Comprar</button>
+  </div>
+
+    <div class="producto">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQFPQZ5ppiJrLqEEgx3OEsw_S6LSzb5yXTw&s" alt="Kirby">
+    <h3>Kirby y la tierra olvidada</h3>
+    <p>$55.99</p>
+    <button>Comprar</button>
+  </div>
+
+    <div class="producto">
+    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/2028edeaf4c0b60142550a3d6e024b6009853ceb9f51591e.jpg" alt="Spiderman2">
+    <h3>Spiderman 2</h3>
+    <p>$80.99</p>
+    <button>Comprar</button>
+  </div>
+
+
+</main>
+<script>
+  document.querySelector('.btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#productos').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+<footer>
+  <p>&copy; 2026 Mi Tienda de Videojuegos. Todos los derechos reservados.</p>
+</footer>
 
 </body>
 </html>
