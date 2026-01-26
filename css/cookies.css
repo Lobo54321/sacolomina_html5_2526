@@ -31,7 +31,11 @@ nav a {
   text-decoration: none;
   transition: color 0.3s;
 }
-
+button a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 nav a:hover {
   color: #4CAF50;
 }

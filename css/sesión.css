@@ -52,7 +52,6 @@ button {
 }
 button a {
   color: white;
-  margin-left: 15px;
   text-decoration: none;
   transition: color 0.3s;
 }
